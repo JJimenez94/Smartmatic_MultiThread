@@ -8,11 +8,11 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/build/smartmatic.exe",
+            "program": "${workspaceFolder}/build/ProducerConsumer.exe",
             "args": [
                 "inputFile.txt",
                 "outputFile.txt",
-                "Algorithm1"
+                "merge"
             ],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
