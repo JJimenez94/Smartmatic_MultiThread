@@ -6,6 +6,12 @@
 #include <string>
 using namespace std;
 
+/**
+ * @brief Method made for the validation of input file
+ * @param path string with the input file path
+ * @return true if the file contents satisfy the requeriments
+ * @return false otherwise
+ */
 bool CheckFile(const string &path)
 {
     bool result{true};
@@ -46,6 +52,7 @@ int main(int argc, char **argv)
         string outputFile(argv[2]);
         string sortAlgorithm(argv[3]);
         unique_ptr<SortBase> sorter{};
+        //! Just can't work if one of the valid algorithms was received in param 3
         if (sortAlgorithm.compare("bubble") == 0)
         {
             sorter = make_unique<Bubble>(outputFile);
